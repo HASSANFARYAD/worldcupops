@@ -6,9 +6,22 @@ from app.services.state import ops_memory
 from app.simulator.engine import inject_gate_b_surge, broadcast, run_simulator
 from app.agents.worldcup_agent import WorldCupOpsAgent
 from app.services.elastic_mcp import ElasticMCPClient
+from fastapi.middleware.cors import CORSMiddleware
+
+allowed_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://world-cup-ops-agent-demo.vercel.app",
+]
 
 app = FastAPI(title="WorldCupOps Agent API", version="0.1.0")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 agent = WorldCupOpsAgent(ElasticMCPClient())
 
 @app.on_event("startup")

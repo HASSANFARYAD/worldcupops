@@ -38,6 +38,7 @@ frontend/out/
 frontend/.vercel/
 .next/
 out/
+.vercel
 
 # Logs
 *.log
