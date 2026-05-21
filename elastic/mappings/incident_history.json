@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "incident_type": { "type": "keyword" },
+      "location_type": { "type": "keyword" },
+      "root_causes": { "type": "text" },
+      "successful_actions": { "type": "text" },
+      "resolution_time_minutes": { "type": "integer" },
+      "embedding": { "type": "dense_vector", "dims": 384 }
+    }
+  }
+}

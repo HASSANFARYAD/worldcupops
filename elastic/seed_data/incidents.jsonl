@@ -1,0 +1,2 @@
+{"incident_type":"rain-amplified gate congestion","location_type":"stadium_gate","root_causes":["rain","late arrivals","low gate throughput"],"successful_actions":["open overflow gate","reroute attendees","send advisory","dispatch stewards"],"resolution_time_minutes":14}
+{"incident_type":"transport compression surge","location_type":"transit_hub","root_causes":["bus delay","train bunching","late kickoff arrivals"],"successful_actions":["stagger entry routes","activate extra shuttle","notify fans"],"resolution_time_minutes":18}
