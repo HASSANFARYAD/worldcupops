@@ -6,9 +6,9 @@ WorldCupOps is a Gemini-powered operational response agent that uses an Elastic 
 
 > One-liner: WorldCupOps turns Gemini + Elastic MCP into a real-time command center agent for stadium operations.
 
-## Why this wins
+## Whats this agent do
 
-Most hackathon agents answer questions. WorldCupOps takes action under human oversight:
+Most agents answer questions. WorldCupOps takes action under human oversight:
 
 1. Detects a live operational anomaly.
 2. Investigates root causes across multiple signals.
@@ -18,7 +18,7 @@ Most hackathon agents answer questions. WorldCupOps takes action under human ove
 6. Executes approved operational actions.
 7. Monitors recovery metrics in real time.
 
-## Demo storyline
+## storyline
 
 A World Cup semifinal is underway. Normal operations are stable. Suddenly:
 
@@ -125,7 +125,7 @@ See [`mcp/elastic_mcp_config.md`](mcp/elastic_mcp_config.md).
 |---|---:|---|
 | `/health` | GET | Health check |
 | `/api/state` | GET | Current operations state |
-| `/api/simulator/inject/gate-b-surge` | POST | Inject winning demo incident |
+| `/api/simulator/inject/gate-b-surge` | POST | Inject demo incident |
 | `/api/agent/analyze` | POST | Trigger agent investigation |
 | `/api/incidents/{id}/approve` | POST | Approve recommended actions |
 | `/api/incidents/{id}/rollback` | POST | Simulate rollback |
