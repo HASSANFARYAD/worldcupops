@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/.venv/
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+credentials.json
+service-account.json
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+.next/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# Docker / local runtime
+docker-data/
+data/
+tmp/
+.cache/
+
+# Elastic / Kibana local data
+elasticsearch-data/
+kibana-data/
+elastic-data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test / coverage
+coverage/
+frontend/coverage/
+backend/coverage/
+
+# Build artifacts
+*.zip
+*.tar
+*.tar.gz
+
+# Local uploads / screenshots
+screenshots/
+recordings/
+media/
